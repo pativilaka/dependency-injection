@@ -38,6 +38,6 @@ public class DependencyInjectionSpringApplication implements CommandLineRunner {
 		System.out.printf("Net salary $%.2f%n", netSalary);
 
 		sc.close();
-		
+
 	}
 }

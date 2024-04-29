@@ -1,6 +1,7 @@
 import entities.Employee;
 import services.PensionService;
 import services.SalaryService;
+import services.TaxBrazilService;
 import services.TaxService;
 
 import java.util.Locale;
@@ -18,7 +19,8 @@ public class Main {
         Employee employee = new Employee(name, grossSalary);
 
         PensionService pensionService = new PensionService();
-        TaxService taxService = new TaxService();
+        //TaxService taxService = new TaxService();
+        TaxService taxService = new TaxBrazilService();
 
         SalaryService salaryService = new SalaryService(pensionService, taxService);
 
